@@ -41,6 +41,10 @@ a{
     color: var(--gray-color);
 }
 
+.font-size-gray{
+    font-size: 1.2rem;
+}
+
 
 /* ------------- Header --------------- */
 
@@ -67,7 +71,7 @@ nav ul li{
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 4rem;
-    background: red;
+    /* background: red; */
 }
 
 .text-container{
@@ -84,8 +88,6 @@ nav ul li{
 }
 
 .text-container p{
-    font-size: 1.2rem;
-    line-height: 1.3rem;
     margin: 10px 0 40px;
 }
 
@@ -96,7 +98,6 @@ nav ul li{
 }
 
 .rating h3{
-    font-size: 1.2rem;
     font-weight: 300;
     margin: 0;
 }
@@ -110,4 +111,59 @@ nav ul li{
     padding: 120px 0 0;
     width: 300px;
 }
+
+/* -------------- Section de los logos --------------- */
+
+.logo-section{
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.logos-container{
+    width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.logos-container img{
+    width: 80%;
+    height: 50px;
+}
+
+
+@media screen and (min-width: 991px) and (max-width: 1200px){
+    /* --------------- Landing Section --------------- */
+    .landing{
+        gap: 2rem;
+    }
+    
+    .text-container{
+        padding: 60px 50px 0;
+    }
+
+    .text-container h1{
+        font-size: 3rem;
+    }
+
+    .rating img{
+        width: 25px;
+        margin-left: 10px;
+    }
+
+    .image-container img{
+        padding: 60px 50px 0;
+        width: 300px;
+    }
+
+    /* -------------- Section de los logos --------------- */
+
+    .logos-container{
+        width: 700px;
+    }
+    
+}
+
 
