@@ -180,7 +180,7 @@ nav ul li{
 
 @media screen and (min-width: 768px) and (max-width: 990px){
     
-    
+    /* ----------------- Header y menu responsive --------------- */
     .toggle{
         display: block;
         z-index: 10;
@@ -188,7 +188,7 @@ nav ul li{
         right: 70px;
         top: 50px;
     }
-    
+
     nav{
         display: none;
     }
@@ -229,3 +229,67 @@ nav ul li{
     
 }
 
+
+
+@media screen and (min-width: 200px) and (max-width: 767px){
+    
+    .font-size-gray{
+        font-size: 1rem;
+    }
+
+    /* ----------------- Header y menu responsive --------------- */
+    .toggle{
+        display: block;
+        z-index: 10;
+        right: 70px;
+        top: 50px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .login-btns{
+        display: none;
+    }
+
+    
+    /* --------------- Landing Section --------------- */
+    .landing{
+        gap: 1rem;
+    }
+    
+    .text-container{
+        padding: 30px 20px 0;
+    }
+
+    .text-container h1{
+        font-size: 3rem;
+    }
+
+    .rating img{
+        width: 25px;
+        margin-left: 10px;
+    }
+
+    .image-container img{
+        display: none;
+    }
+
+    /* -------------- Section de los logos --------------- */
+    .logo-section{
+        padding: 30px 20px;
+    }
+
+    .logos-container{
+        margin: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        width: auto;
+    }
+    
+    .logos-container img{
+        width: 80%;
+        height: 50px;
+    }
+    
+}
