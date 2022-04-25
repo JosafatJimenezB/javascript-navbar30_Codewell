@@ -3,6 +3,7 @@
 
 :root{
     --bg-color: #f3ede5;
+    --gray-color: #758593; 
 }
 
 *{
@@ -36,6 +37,10 @@ a{
     font-weight: 600;
 }
 
+.gray-text{
+    color: var(--gray-color);
+}
+
 
 /* ------------- Header --------------- */
 
@@ -52,7 +57,6 @@ nav ul li{
     margin: 0 10px;
 }
 
-
 .login-btns a{
     margin: 10px;
 }
@@ -63,6 +67,7 @@ nav ul li{
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 4rem;
+    background: red;
 }
 
 .text-container{
@@ -91,7 +96,7 @@ nav ul li{
 }
 
 .rating h3{
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
     margin: 0;
 }
