@@ -28,6 +28,14 @@ a{
     text-decoration: none;
 }
 
+.btn{
+    background: #133416;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
 
 /* ------------- Header --------------- */
 
@@ -35,10 +43,18 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 3rem 1rem;
+    /* background: red; */
 }
 
 nav ul li{
     display: inline-block;
+    margin: 0 10px;
+}
+
+
+.login-btns a{
+    margin: 10px;
 }
 
 
