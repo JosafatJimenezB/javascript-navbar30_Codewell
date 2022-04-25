@@ -75,6 +75,56 @@ nav ul li{
     margin: 10px;
 }
 
+.uil{
+    color: #88aed0;
+}
+
+/* ------------ Header Submenu ------------- */
+.submenu-position{
+    position: relative;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -40px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    transition: all 0.3s ease-in;
+}
+
+.submenu.active{
+    display: block;
+}
+
+.submenu::before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 55px;
+    width: 30px;
+    height: 30px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: white;
+    z-index: 10;
+}
+
+.service{
+    display: grid;
+    grid-template-columns: 20px auto;
+}
+
+.icono{
+    font-size: 1.2rem;
+}
+
+.text{
+    padding: 0 0 0 10px;
+}
+
 
 /* --------------- Landing Section --------------- */
 .landing{
@@ -180,6 +230,55 @@ nav ul li{
 
 @media screen and (min-width: 768px) and (max-width: 990px){
     
+    /* ---------- Submenu ----------- */
+    .submenu-position{
+        position: relative;
+    }
+    
+    .submenu{
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: -40px;
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        width: 500px;
+        transition: all 0.3s ease-in;
+    }
+    
+    .submenu.active{
+        display: block;
+    }
+    
+    .submenu::before{
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 55px;
+        width: 30px;
+        height: 30px;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        background: white;
+        z-index: 10;
+    }
+    
+    .service{
+        display: grid;
+        grid-template-columns: 20px auto;
+    }
+    
+    .icono{
+        font-size: 1.2rem;
+    }
+    
+    .text{
+        padding: 0 0 0 10px;
+    }
+    
+
+
+
     /* ----------------- Header y menu responsive --------------- */
     .toggle{
         display: block;
@@ -226,6 +325,7 @@ nav ul li{
     .logos-container{
         width: 600px;
     }
+    
     
 }
 
