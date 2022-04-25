@@ -17,3 +17,28 @@ body{
 }
 
 
+/*------------------------- Reutilizable--------------------- */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* ------------- Header --------------- */
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+
