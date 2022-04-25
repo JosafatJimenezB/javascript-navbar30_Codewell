@@ -29,10 +29,10 @@ a{
 }
 
 .btn{
-    background: #133416;
-    color: #fff;
     padding: 15px 30px;
+    color: #fff;
     border-radius: 3px;
+    background: #133416;
     font-weight: 600;
 }
 
@@ -57,4 +57,52 @@ nav ul li{
     margin: 10px;
 }
 
+
+/* --------------- Landing Section --------------- */
+.landing{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 4rem;
+}
+
+.text-container{
+    padding: 150px 0 0;
+    width: 100%;
+}
+
+.text-container h1{
+    font-size: 4rem;
+}
+
+.text-container h1 span{
+    color: #f7b300;
+}
+
+.text-container p{
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    margin: 10px 0 40px;
+}
+
+.rating{
+    margin: 50px 0 0;
+    width: 100%;
+    display: flex;
+}
+
+.rating h3{
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.rating img{
+    width: 25px;
+    margin-left: 10px;
+}
+
+.image-container img{
+    padding: 120px 0 0;
+    width: 300px;
+}
 
