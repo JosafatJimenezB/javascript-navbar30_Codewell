@@ -9,12 +9,10 @@ const toggle = document.querySelector('.toggle');
 // Function to open and close the menu
 function openMenu() {
     menu.classList.add('active');
-    close.classList.add('active');
 }
 
 function closeMenu(){
     menu.classList.remove('active');
-    close.classList.remove('active');
 }
 
 // On toggle click activate menu
