@@ -52,6 +52,21 @@ a{
     cursor: pointer;
 }
 
+.toggle.active{
+    display: block;
+}
+
+.close{
+    width: 25px;
+    height: 25px;
+    display: none; 
+    cursor: pointer;
+}
+
+.close.active{
+    display: block;
+}
+
 
 /* ------------- Header --------------- */
 
@@ -199,6 +214,7 @@ nav ul li{
     /* --------------- Landing Section --------------- */
     .landing{
         gap: 2rem;
+        z-index: 1;
     }
     
     .text-container{
@@ -231,36 +247,17 @@ nav ul li{
 @media screen and (min-width: 768px) and (max-width: 990px){
     
     /* ---------- Submenu ----------- */
-    .submenu-position{
-        position: relative;
-    }
-    
-    .submenu{
+    .menu-toggle{
         display: none;
-        position: absolute;
-        top: 40px;
-        left: -40px;
-        background: #fff;
-        border-radius: 10px;
-        padding: 20px;
-        width: 500px;
-        transition: all 0.3s ease-in;
-    }
-    
-    .submenu.active{
-        display: block;
-    }
-    
-    .submenu::before{
-        content: '';
-        position: absolute;
-        top: -20px;
-        left: 55px;
-        width: 30px;
-        height: 30px;
-        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
         background: white;
-        z-index: 10;
+    }
+
+    .menu-toggle.active{
+        display: block;
     }
     
     .service{
